@@ -1,13 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div id="contacto">
+                <div class="contactHeader">
+                    <h1>Contacto</h1>
+                </div>
+                <form action="/enviarformulario.php" class="contactForm" method="POST">
+                    <div class="contactFormItem">
+                        <label>Nombre</label>
+                        <input class="contactFormInput" type="text" required="" name="name">
+                    </div>
+                    <div class="contactFormItem">
+                        <label>Email</label>
+                        <input class="contactFormInput" type="text" required="" name="email">
+                    </div>
+                    <div class="contactFormItem">
+                        <label>Mensaje</label>
+                        <textarea class="contactFormInput" name="message" required="" cols="30" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="contactFormButton">Enviar</button>
+                </form>
+            </div>
+            <div class="footer">
+                <p>Desarrollado con ❤️️ y ☕ por matna</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
 </html>
